@@ -18,7 +18,8 @@
 	</div>
 	<div class="full-image" style="background-image:url(banner-image.jpg);background-size:cover;">
 		<div class="intro-text">	
-			<p>Gamezone is a concise review site informing you about the best games out today. Check out the top 5 to see our most recent picks.</p>
+			<p>Gamezone is a concise review site informing you about the best games out today.</p>
+			<span>Check out the top 5 to see our most recent picks.</span>
 		</div>
 	</div>
 	
@@ -26,7 +27,7 @@
 	<div class="review">
 		<div class="review-image">
 			<h1>1</h1>
-			<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbjgLHnx5dMuaF3Mv2dba2su4aco3dQT_vK_yTBO9Erbjp6qnd">
+			<img src="images/call_of_duty.jpg">
 		</div>
 		<div class="review-words">
 			<h2>Call Of Duty: Advanced Warfare</h2>
@@ -41,7 +42,7 @@
 	<div class="review">
 		<div class="review-image">
 			<h1>2</h1>
-			<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfxRyv9Yrw_K4ieZ51dAwROhRIxs5sIg5Yhx9Lc2GfziSG3ScCOQ">
+			<img src="images/wwe.jpeg">
 		</div>
 		<div class="review-words">
 			<h2>WWE 2k15</h2>
@@ -56,7 +57,7 @@
 	<div class="review">
 		<div class="review-image">
 			<h1>3</h1>
-			<img src="http://static.gosunoob.com/img/1/2014/10/Destiny.jpg">
+			<img src="images/destiny.jpg">
 		</div>
 		<div class="review-words">
 			<h2>Destiny</h2>
@@ -91,7 +92,7 @@
 	body{
 		margin: 0;
 		padding: 0;
-		background-color: rgba(87, 230, 245, 0.3);
+		background-color: rgba(237, 237, 237, 1);
 	}
 	p{
 		font-family: 'Open Sans', sans-serif;
@@ -123,14 +124,19 @@
 		float: left;
 	 }
 	 img.logo-image {
-	width: 33%;
-	display: inline-block;
-	max-width: 69px;
-	margin-right: 64px;
+		width: 33%;
+		display: inline-block;
+		max-width: 69px;
+		margin-right: 64px;
+		border: 11px solid rgb(3, 12, 60);
+		border-radius: 50%;
+		z-index: 5;
 	}
 	.container-header{
 		width: 100%;
-		background-color: rgb(150, 150, 150);
+		background-color: rgb(3, 12, 60);
+		z-index: 6;
+		position: relative;
 	}
  	.header{
 		color: black;
@@ -143,7 +149,7 @@
 	 	width: 50%;
 		max-width: 500px;
 		margin: 0 auto;
-		background-color: rgb(150, 150, 150);
+		background-color: rgba(66, 66, 66, 0.86);
 		padding: 20px;
 		position: absolute;
 		bottom: -47px;
@@ -152,14 +158,17 @@
  	}
 	.intro-text p{
 	 	color: white;
-	 	font-size: 20px;
+		font-size: 20px;
+		text-align: center;
+		font-weight: bold;
  	}
 	.review-image{
 		float: left
 	}
 	.review-image img{
 
-		max-width: 250px;
+		width: 100%;
+	max-width: 300px;
 	}
 	.review-image h1{
 		position: absolute;
@@ -189,14 +198,14 @@
 		font-family: helvetica, sans-serif;
 		float: left;
 		padding: 0 70px;
-		color: rgb(65, 65, 65);
+		color: rgb(61, 219, 236);
 	}
 
 	.full-image{
 		width: 100%;
 		background-image: url(banner-image.jpg);
 		background-size: cover;
-		height: 400px;
+		height: 373px;
 		background-position: 50% 50%;
 		position: relative;
 		margin-bottom: 100px;
