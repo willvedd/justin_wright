@@ -8,21 +8,20 @@
 	<div class="container-header">
 		<div class="header">
 			<img class="logo-image" src="logo.png">
-			<h1 class="logo">GameRadar</h1>
+			<h1 class="logo"><a href="#">GameRadar</a></h1>
 			<ul class="navigation">
-				<li class="tab">Home</li>
-				<li class="tab">Archive</li>
-				<li class="tab">About</li>
+				<li class="tab"><a href="#">Home</a></li>
+				<li class="tab"><a href="#">About</a></li>
 			</ul>
 		</div>
 	</div>
 	<div class="full-image" style="background-image:url(banner-image.jpg);background-size:cover;">
-		<div class="intro-text">	
-			<p>Gamezone is a concise review site informing you about the best games out today.</p>
-			<span>Check out the top 5 to see our most recent picks.</span>
-		</div>
 	</div>
 	
+	<div class="intro-text">	
+		<p>Gamezone is a concise review site informing you about the best games out today.</p>
+		<span>Check out the top 5 to see our most recent picks.</span>
+	</div>
 
 	<div class="review">
 		<div class="review-image">
@@ -68,9 +67,44 @@
 			<h3>****</h3>
 		</div>
 	</div>
+	<div class="review">
+		<div class="review-image">
+			<h1>4</h1>
+			<img src="images/gta5.jpg">
+		</div>
+		<div class="review-words">
+			<h2>Grant Theft Auto 5</h2>
+			<p>
+				<strong>Description: </strong>Lorem ipsum dolor sit amet
+			</p>
+			<p><strong>Review: </strong>Lorem ipsum dolor sit amet</p>
+			<h3>***</h3>
+		</div>
+	</div>
+	<div class="review">
+		<div class="review-image">
+			<h1>5</h1>
+			<img src="images/second_son.jpg">
+		</div>
+		<div class="review-words">
+			<h2>Infamous Second Son</h2>
+			<p>
+				<strong>Description: </strong>Lorem ipsum dolor sit amet
+			</p>
+			<p><strong>Review: </strong>Lorem ipsum dolor sit amet</p>
+			<h3>***</h3>
+		</div>
+	</div>
 	<div class='footer'>
 		<p class= "footer-text">
-			GameRadar &copy; 2014
+			GameRadar &copy; 
+			<script language="JavaScript" type="text/javascript">
+			    now = new Date
+			    theYear=now.getYear()
+			    if (theYear < 1900)
+			    theYear=theYear+1900
+			    document.write(theYear)
+			</script>
 		</p>
 	</div>
 </body>
@@ -78,14 +112,15 @@
 
 <style>
 	.footer{
-		background-color: rgb(179, 63, 54);
+		background-color: #0B082C;
+		border-top: 2px solid #00FFE2;
 	}
 	.footer-text{
 		color: white;
 		margin: 0 auto;
 		padding: 30px 20px;
 		font-size: 18px;
-		max-width: 1240px;
+		max-width: 960px;
 		width: 100%;
 		text-align: center;
 	}
@@ -105,6 +140,10 @@
 		margin:0;
 		vertical-align: middle;
 	}
+	.logo a{
+		color: white;
+		text-decoration: none;
+	}
 	.navigation{
 		display: inline-block;
 		vertical-align: middle;
@@ -115,7 +154,7 @@
 		width: 50%;
 		height: 400px;
 		margin: 40px auto;
-		max-width: 1240px;
+		max-width: 960px;
 		width: 100%;
 		padding: 0%;
 	 }
@@ -127,7 +166,7 @@
 		width: 33%;
 		display: inline-block;
 		max-width: 69px;
-		margin-right: 64px;
+		margin-right: 15px;
 		border: 11px solid rgb(3, 12, 60);
 		border-radius: 50%;
 		z-index: 5;
@@ -153,8 +192,11 @@
 		padding: 20px;
 		position: absolute;
 		bottom: -47px;
-		left: 37%;
+		margin-top: -120px;
+		position: relative;
+		z-index: 5;
 		box-shadow: 0 2px 10px 0px rgb(42, 42, 42);
+		margin-bottom: 100px;
  	}
 	.intro-text p{
 	 	color: white;
@@ -162,8 +204,17 @@
 		text-align: center;
 		font-weight: bold;
  	}
+ 	.intro-text span{
+ 		font-style: italic;
+		color: #FFF;
+		font-family: helvetica;
+		padding: 5px 20px;
+		text-align: center;
+		display: block;
+ 	}
 	.review-image{
-		float: left
+		float: left;
+		width: 33%;
 	}
 	.review-image img{
 
@@ -171,18 +222,23 @@
 	max-width: 300px;
 	}
 	.review-image h1{
-		position: absolute;
+	position: absolute;
 	color: white;
 	height: 50px;
 	width: 50px;
-	background-color: rgb(61, 61, 61);
+	background-color: #3DDBEC;
 	text-align: center;
 	border-radius: 50%;
 	margin-top: -20px;
 	margin-left: -20px;
+	font-family: 'Audiowide', cursive;
+	line-height: 50px;
+
 	}
 	.review-words{
-		padding: 56px;
+		float: right;
+		width: 60%;
+		padding: 40px 3.5%;
 	}
 	.review-words h2{
 		display: inline;
@@ -198,17 +254,23 @@
 		font-family: helvetica, sans-serif;
 		float: left;
 		padding: 0 70px;
+	}
+	.tab a{
 		color: rgb(61, 219, 236);
+		text-decoration: none;
+		font-family: helvetica;
+		text-transform: uppercase;
+		font-size: 17px;
+		font-weight: bold;
 	}
 
 	.full-image{
 		width: 100%;
 		background-image: url(banner-image.jpg);
 		background-size: cover;
-		height: 373px;
+		height: 250px;
 		background-position: 50% 50%;
 		position: relative;
-		margin-bottom: 100px;
 	}
 
 	.full-image img{
